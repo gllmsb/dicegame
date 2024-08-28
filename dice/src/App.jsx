@@ -1,5 +1,6 @@
 import './App.css'
-import Game from './component/game/game'
+import { Game } from './component/game/game'
+
 
 function App() {
 

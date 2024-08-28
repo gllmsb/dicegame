@@ -1,16 +1,13 @@
-import React from 'react';
 import styles from './popup.module.scss';
 
-const Popup = ({ winner, onRestart }) => {
-    console.log('Popup Component Rendered. Winner:', winner);
+export const Popup = ({ winner, onRestart }) => {
     return (
-      <div className={styles.popup}>
-        <div className={styles.popupContent}>
-          <h2>{winner}</h2>
-          <button onClick={onRestart}>Restart</button>
+        <div className={styles.popup}>
+            <div className={styles.popupContent}>
+                <h2>Game Over</h2>
+                <p>{winner}</p>
+                <button onClick={onRestart}>Restart Game</button>
+            </div>
         </div>
-      </div>
     );
-  }
-
-export default Popup;
+};

@@ -1,15 +1,29 @@
+
 .player {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
     text-align: center;
-    margin: 20px;
-  }
-  
-  .diceContainer {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-  }
-  
-  .result {
-    text-align: center;
-    margin-top: 20px;
-  }
+    border-radius: 10px;
+    background-color: #f9f9f9;
+
+    h2 {
+        margin-bottom: 10px;
+        font-size: 24px;
+        color: #333;
+    }
+
+    .diceContainer {
+        padding: 18rem;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin: 15px 0;
+    }
+
+    p {
+        font-size: 10px;
+        margin: 5px 0;
+    }
+}
+

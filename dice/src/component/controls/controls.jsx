@@ -1,14 +1,13 @@
-import React from 'react';
+import styles from './controls.module.scss';
 
-const Controls = ({ onRollDice, currentPlayer, rolling }) => {
-  return (
-    <div className="controls">
-      <h3>{currentPlayer}'s Turn</h3>
-      <button onClick={onRollDice} disabled={rolling}>
-        Roll Dice
-      </button>
-    </div>
-  );
-};
+export const Controls = ({ onRollDice, currentPlayer, rolling}) => {
 
-export default Controls;
+    return(
+        <div className={styles.controls}>
+            <p>{currentPlayer}'s Turn</p>
+            <button onClick={onRollDice} disabled={rolling}>
+                {rolling ? 'Rolling...' : 'Roll Dice'}
+            </button>
+        </div>
+    )
+}

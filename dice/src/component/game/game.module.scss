@@ -1,0 +1,43 @@
+.game {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 20px;
+    gap: 20px; 
+
+    .controls-container {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        justify-content: center; 
+        flex: 1; 
+    }
+
+    .player {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin: 10px;
+        text-align: center;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+
+        h2 {
+            margin-bottom: 10px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .diceContainer {
+            padding: 18rem;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 15px 0;
+        }
+
+        p {
+            font-size: 10px;
+            margin: 5px 0;
+        }
+    }
+}
